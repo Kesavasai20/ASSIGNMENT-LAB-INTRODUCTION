@@ -3,10 +3,17 @@
 ### Prepared By : K KESAVA SAI
 ### Register Number : 212223230105
 ### DEPT : AIDS 2nd YEAR
-# **ACTIVITY 1 :** :
+### Requirements :
+Python 3.x
+Pandas library
+
+### Data :
+The data used for this assignment is from bank_train.csv, which includes various columns related to client information and their interactions with the bank.
+
+### CODE :
+### ACTIVITY 1 :
 ## Task 1. Write a Python program to select the 'name' and 'score' columns from the following DataFrame.
-
-
+```
 import pandas as pd
 import numpy as np
 
@@ -20,17 +27,21 @@ df = pd.DataFrame(exam_data)
 
 selected_columns = df[['name', 'score']]
 print(selected_columns)
+```
+### Output:
 ![image](https://github.com/user-attachments/assets/e9380517-a82f-4125-9c34-db0da47d8901)
 
 
 ## Task 2: Selecting the data where attempts are greater than 3.
-
+```
 filtered_data = df[df['attempts'] > 3]
 print(filtered_data)
+```
+### Output:
 ![image](https://github.com/user-attachments/assets/50c90f80-ad6b-4853-ba50-3cb2718e2b94)
 
 ## Task 3: Indexing rows and columns based on conditions.
-
+```
 data = {
     'name': ['Alice', 'Bob', 'Charlie', 'Dave'],
     'age': [25, 35, 40, 28],
@@ -39,25 +50,37 @@ data = {
 }
 
 df = pd.DataFrame(data)
-
+```
 # a. Select rows where age is greater than 30:
+```
 age_filtered = df[df['age'] > 30]
 print("Rows where age is greater than 30:\n", age_filtered)
+```
+### Output:
 ![image](https://github.com/user-attachments/assets/f3260b4e-1326-441d-b948-883411445728)
 
 # b. Select rows where name contains 'e':
+```
 name_filtered = df[df['name'].str.contains('e')]
 print("Rows where name contains 'e':\n", name_filtered)
+```
+### Output:
 ![image](https://github.com/user-attachments/assets/50c09317-37b8-46e8-bd1b-549de8028897)
 
 # c. Select rows where gender is 'M' and salary is greater than 65000:
+```
 gender_salary_filtered = df[(df['gender'] == 'M') & (df['salary'] > 65000)]
 print("Rows where gender is 'M' and salary is greater than 65000:\n", gender_salary_filtered)
+```
+### Output:
 ![image](https://github.com/user-attachments/assets/745382cc-0d38-487b-8153-ce1180e4e476)
 
 # d. Select columns 'name' and 'age'
+```
 name_age = df[['name', 'age']]
 print("Columns 'name' and 'age':\n", name_age)
+```
+### Output:
 ![image](https://github.com/user-attachments/assets/bfc810d7-ba97-40fe-8adb-b3e3b1f314a7)
 
 # **ACTIVITY 2 :**
