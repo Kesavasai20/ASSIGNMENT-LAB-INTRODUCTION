@@ -108,7 +108,8 @@ print(not_subscribed)
 ![image](https://github.com/user-attachments/assets/d8a67745-ae4b-4149-a0b8-7f967a567a83)
 
 ## Task c: Select the rows where clients who have subscribed to a deposit either have a housing or a personal loan
-## Condition: Select the rows where clients who have subscribed to a deposit either have a housing or a personal loan.
+## Condition: 
+Select the rows where clients who have subscribed to a deposit either have a housing or a personal loan.
 ```
 subscribed_with_loans = df_bank.loc[(df_bank['deposit'] == 'yes') & ((df_bank['housing'] == 'yes') | (df_bank['loan'] == 'yes'))]
 print(subscribed_with_loans)
@@ -117,7 +118,8 @@ print(subscribed_with_loans)
 ![image](https://github.com/user-attachments/assets/7c9a65c7-1a8e-49b9-8c28-ccf511ad0963)
 
 ## Task d: Select the rows where clients with secondary education who have not subscribed to a deposit
-Condition: Select the rows where clients with secondary education who have not subscribed to a deposit.
+## Condition: 
+Select the rows where clients with secondary education who have not subscribed to a deposit.
 ````
 secondary_not_subscribed = df_bank.loc[(df_bank['education'] == 'secondary') & (df_bank['deposit'] == 'no')]
 print(secondary_not_subscribed)
@@ -126,7 +128,8 @@ print(secondary_not_subscribed)
 ![image](https://github.com/user-attachments/assets/f1fd7f89-c9bc-4406-84ce-f892d4e6bb7d)
 
 ## Task e: Select the rows where clients who have subscribed to a term deposit as an outcome of the successful marketing campaign
-Condition: Select the rows where clients who have subscribed to a term deposit as an outcome of the successful marketing campaign.
+## Condition: 
+Select the rows where clients who have subscribed to a term deposit as an outcome of the successful marketing campaign.
 ```
 subscribed_success = df_bank.loc[(df_bank['deposit'] == 'yes') & (df_bank['poutcome'] == 'success')]
 print(subscribed_success)
@@ -135,7 +138,8 @@ print(subscribed_success)
 ![image](https://github.com/user-attachments/assets/fbc5c64b-31eb-41b9-860a-3c95307e8d6b)
 
 ## Task f: Select the rows where unemployed clients have not subscribed to deposit
-Condition: Select the rows where unemployed clients have not subscribed to a deposit.
+## Condition: 
+Select the rows where unemployed clients have not subscribed to a deposit.
 ```
 unemployed_not_subscribed = df_bank.loc[(df_bank['job'] == 'unemployed') & (df_bank['deposit'] == 'no')]
 print(unemployed_not_subscribed)
@@ -144,7 +148,8 @@ print(unemployed_not_subscribed)
 ![image](https://github.com/user-attachments/assets/28060a01-3eae-462d-9ed7-bf8f6852c39b)
 
 ## Task g: Select columns 'name' and 'salary' where age is less than or equal to 30
-Condition: Select columns 'name' and 'salary' where age is less than or equal to 30. (Note: Adjust 'name' and 'salary' to the actual column names.)
+## Condition: 
+Select columns 'name' and 'salary' where age is less than or equal to 30. (Note: Adjust 'name' and 'salary' to the actual column names.)
 ```
 young_clients = df_bank.loc[df_bank['age'] <= 30, ['job', 'balance']]
 print(young_clients)
