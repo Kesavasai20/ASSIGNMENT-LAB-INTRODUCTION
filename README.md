@@ -88,7 +88,8 @@ This section covers the tasks in Activity 2, which involve filtering and selecti
 import pandas as pd
 
 ### Task a
-Condition: Select the rows where clients with primary education have subscribed to a deposit.
+## Condition: 
+Select the rows where clients with primary education have subscribed to a deposit.
 ```
 primary_education_subscribed = df_bank.loc[(df_bank['education'] == 'primary') & (df_bank['deposit'] == 'yes')]
 print(primary_education_subscribed)
@@ -97,7 +98,8 @@ print(primary_education_subscribed)
 ![image](https://github.com/user-attachments/assets/5192346c-2cc3-4d61-ab73-8c5dc475e937)
 
 ## Task b: Select the rows where clients have not subscribed to a deposit
-Condition: Select the rows where clients have not subscribed to a deposit.
+## Condition: 
+Select the rows where clients have not subscribed to a deposit.
 ```
 not_subscribed = df_bank.loc[df_bank['deposit'] == 'no']
 print(not_subscribed)
@@ -106,7 +108,7 @@ print(not_subscribed)
 ![image](https://github.com/user-attachments/assets/d8a67745-ae4b-4149-a0b8-7f967a567a83)
 
 ## Task c: Select the rows where clients who have subscribed to a deposit either have a housing or a personal loan
-Condition: Select the rows where clients who have subscribed to a deposit either have a housing or a personal loan.
+## Condition: Select the rows where clients who have subscribed to a deposit either have a housing or a personal loan.
 ```
 subscribed_with_loans = df_bank.loc[(df_bank['deposit'] == 'yes') & ((df_bank['housing'] == 'yes') | (df_bank['loan'] == 'yes'))]
 print(subscribed_with_loans)
